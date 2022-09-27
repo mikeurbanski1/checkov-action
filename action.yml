@@ -25,6 +25,9 @@ inputs:
   api-key:
     description: 'Environment variable name of the Bridgecrew API key from Bridgecrew app'
     required: false
+  use_enforcement_rules:
+    description: 'use enforcement rules configured in the Bridgecrew or Prisma platform to configure hard / soft-fail logic (requires API key)'
+    required: false
   soft_fail:
     description: 'do not return an error code if there are failed checks'
     required: false
